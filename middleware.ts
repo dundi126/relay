@@ -1,6 +1,10 @@
 import { clerkMiddleware } from '@clerk/nextjs/server';
 
-export default clerkMiddleware({});
+export default clerkMiddleware({
+  publicRoutes: [
+    "/api/webhooks(.*)", // Allow the Clerk webhook route to be public
+  ]
+});
 
 export const config = {
   matcher: [
