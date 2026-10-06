@@ -44,12 +44,12 @@ export const Search = () => {
                 value={value}
                 onChange={(e) => setValue(e.target.value)}
                 placeholder="Search"
-                className="rounded-r-none focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0"
+                className="ml-14 rounded-r-none focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0"
             />
             {value && (
                 <X
                     onClick={onClear}
-                    className="absolute right-10 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground cursor-pointer"
+                    className="absolute top-3 right-14 h-5 w-5 text-muted-foreground cursor-pointer hover:opacity-75 transition"
                 />
             )}
             <Button
